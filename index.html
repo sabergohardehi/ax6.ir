@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" data-title-key="title.hub">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ax6.ir - free non-profit online tools" />
+  <title>ax6.ir - Free Tools</title>
+  <script>
+    (function(){try{var m=document.cookie.match(/(?:^|; )ax6=([^;]*)/);if(!m)return;var j=JSON.parse(decodeURIComponent(m[1]));var h=document.documentElement;if(j.t==="light")h.setAttribute("data-theme","light");if(j.l==="fa"){h.lang="fa";h.dir="rtl";}}catch(e){}})();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Vazirmatn:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/hub.css" />
+  <link rel="stylesheet" href="css/prefs.css" />
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"></div>
+  <div class="page">
+    <header class="hero">
+      <p class="eyebrow" data-i18n="hub.eyebrow">Non-profit · No ads · No tracking</p>
+      <h1 data-i18n="hub.title">ax6.ir Tools</h1>
+      <p class="lead" data-i18n="hub.lead">Simple, free utilities you can use in the browser. No account required. Nothing is sent to a server.</p>
+    </header>
+
+    <div class="search-wrap">
+      <label class="sr-only" for="tool-search" data-i18n="hub.search">Search tools</label>
+      <input type="search" id="tool-search" data-i18n-placeholder="hub.searchPh" placeholder="Search tools…" autocomplete="off" />
+    </div>
+
+    <div class="filters" id="filters" role="group" aria-label="Filter by category" data-i18n-aria="hub.filterBy">
+      <button type="button" class="filter-btn" data-cat="all" data-i18n="filter.all" aria-pressed="true">All</button>
+      <button type="button" class="filter-btn" data-cat="fav" data-i18n="filter.fav" aria-pressed="false">Favorites</button>
+      <button type="button" class="filter-btn" data-cat="text" data-i18n="filter.text" aria-pressed="false">Text</button>
+      <button type="button" class="filter-btn" data-cat="convert" data-i18n="filter.convert" aria-pressed="false">Convert</button>
+      <button type="button" class="filter-btn" data-cat="calc" data-i18n="filter.calc" aria-pressed="false">Calculate</button>
+      <button type="button" class="filter-btn" data-cat="color" data-i18n="filter.color" aria-pressed="false">Color</button>
+      <button type="button" class="filter-btn" data-cat="image" data-i18n="filter.image" aria-pressed="false">Image</button>
+      <button type="button" class="filter-btn" data-cat="time" data-i18n="filter.time" aria-pressed="false">Time</button>
+      <button type="button" class="filter-btn" data-cat="security" data-i18n="filter.security" aria-pressed="false">Security</button>
+    </div>
+
+    <main class="tool-grid" id="tool-grid">
+      <h2 class="grid-heading hidden" id="fav-heading" data-i18n="hub.favorites">Favorites</h2>
+      <h2 class="grid-heading hidden" id="all-heading" data-i18n="hub.allTools">All tools</h2>
+
+      <article class="tool-card" data-id="monitor-test" data-cat="image" data-keys="monitor test display dead pixel calibration screen تست مانیتور پیکسل">
+        <button type="button" class="fav-btn" data-id="monitor-test" aria-pressed="false" data-i18n-aria="fav.add">★</button>
+        <button type="button" class="info-btn" data-id="monitor-test" data-i18n-tip="tool.monitor-test.tip" data-tip="Full-screen tests for dead pixels, colors, and sharpness." data-i18n-aria="info.about">i</button>
+        <a class="tool-card-main" href="monitor-test/">
