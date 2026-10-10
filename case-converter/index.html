@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" data-title-key="title.case-converter">
+<head>
+  <meta charset="UTF-8" />
+  <script>(function(){try{var m=document.cookie.match(/(?:^|; )ax6=([^;]*)/);if(!m)return;var j=JSON.parse(decodeURIComponent(m[1]));var h=document.documentElement;if(j.t==="light")h.setAttribute("data-theme","light");if(j.l==="fa"){h.lang="fa";h.dir="rtl";}}catch(e){}})();</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case Converter — ax6.ir</title>
+  <link rel="stylesheet" href="../css/tool.css" />
+  <link rel="stylesheet" href="../css/prefs.css" />
+</head>
+<body>
+  <div class="ambient"></div>
+  <div class="page">
+    <header class="topbar">
+      <a class="back-link" href="../">← All tools</a>
+      <h1 data-i18n="tool.case-converter.name">Case Converter</h1>
+    </header>
+    <main class="card stack">
+      <div class="field">
+        <label for="input">Input</label>
+        <textarea id="input" placeholder="Type or paste text…"></textarea>
+      </div>
+      <div class="row">
+        <button type="button" data-mode="upper">UPPER</button>
+        <button type="button" data-mode="lower">lower</button>
+        <button type="button" data-mode="title">Title Case</button>
+        <button type="button" data-mode="sentence">Sentence case</button>
+        <button type="button" id="copy">Copy</button>
+      </div>
+      <div class="field">
+        <label for="output">Output</label>
+        <textarea id="output" readonly></textarea>
+      </div>
+    </main>
+  </div>
+  <script src="../js/tool-common.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
