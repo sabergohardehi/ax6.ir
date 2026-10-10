@@ -1,1 +1,50 @@
-PLACEHOLDER_WILL_REPLACE_WITH_REAL
+<!DOCTYPE html>
+<html lang="en" data-title-key="title.base64">
+<head>
+  <meta charset="UTF-8" />
+  <script>
+    (function(){try{var m=document.cookie.match(/(?:^|; )ax6=([^;]*)/);if(!m)return;var j=JSON.parse(decodeURIComponent(m[1]));var h=document.documentElement;if(j.t==="light")h.setAttribute("data-theme","light");if(j.l==="fa"){h.lang="fa";h.dir="rtl";}}catch(e){}})();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Encode and decode Base64 text or files - free tool by ax6.ir" />
+  <title>Base64 Encode / Decode - ax6.ir</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Vazirmatn:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/tool.css" />
+  <link rel="stylesheet" href="../css/prefs.css" />
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"></div>
+  <div class="page wide">
+    <header class="topbar">
+      <a class="back-link" href="../" data-i18n="nav.back">← All tools</a>
+      <h1 data-i18n="tool.base64.name">Base64 Encode / Decode</h1>
+      <p class="subtitle" data-i18n="tool.base64.sub">Convert text or a local file. Optional URL-safe alphabet.</p>
+    </header>
+    <main class="card stack">
+      <label class="check"><input type="checkbox" id="urlsafe" /> <span data-i18n="b64.urlsafe">URL-safe (-_ instead of +/)</span></label>
+      <div class="field">
+        <label for="input" data-i18n="b64.input">Input</label>
+        <textarea id="input" class="mono" data-i18n-placeholder="b64.ph" placeholder="Text or Base64…"></textarea>
+      </div>
+      <div class="row">
+        <button type="button" class="btn btn-primary" id="btn-encode" data-i18n="b64.encode">Encode</button>
+        <button type="button" class="btn btn-ghost" id="btn-decode" data-i18n="b64.decode">Decode</button>
+        <button type="button" class="btn btn-ghost" id="btn-swap" data-i18n="b64.swap">Swap</button>
+        <button type="button" class="btn btn-accent" id="btn-copy" data-i18n="b64.copy">Copy output</button>
+      </div>
+      <label class="drop" id="drop"><span data-i18n="b64.drop">Drop a file here or click to encode it</span><input type="file" id="file" class="file-input" /></label>
+      <div class="field">
+        <label for="output" data-i18n="b64.output">Output</label>
+        <textarea id="output" class="mono" readonly></textarea>
+      </div>
+      <p class="hint" id="hint" role="status"></p>
+    </main>
+  </div>
+    <script src="../js/i18n.js"></script>
+  <script src="../js/prefs.js"></script>
+  <script src="../js/tool-common.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
