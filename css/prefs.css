@@ -1,1 +1,126 @@
-/* full */
+/* Shared chrome, settings dialog, RTL + light-theme extras */
+
+.ax6-chrome {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding: 0.55rem 1.1rem;
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+
+.ax6-seg {
+  display: inline-flex;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.ax6-chip {
+  padding: 0.32rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg-card);
+  color: var(--text-muted);
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.ax6-seg .ax6-chip {
+  border: none;
+  border-radius: 0;
+  background: transparent;
+}
+
+a.ax6-chip {
+  text-decoration: none;
+}
+
+#lang-switcher {
+  display: none !important;
+}
+
+.ax6-chip:hover,
+.ax6-chip[aria-pressed="true"] {
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.ax6-dialog {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+}
+
+.ax6-dialog.hidden {
+  display: none;
+}
+
+.ax6-backdrop {
+  position: absolute;
+  inset: 0;
+  background: var(--backdrop);
+}
+
+.ax6-panel {
+  position: relative;
+  z-index: 1;
+  width: min(36rem, 100%);
+  max-height: min(86vh, 42rem);
+  overflow: auto;
+  padding: 1.35rem 1.35rem 1.2rem;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  box-shadow: var(--shadow);
+}
+
+.ax6-panel h2 {
+  margin: 0 2rem 0.5rem 0;
+  font-size: 1.25rem;
+}
+
+html[dir="rtl"] .ax6-panel h2 {
+  margin: 0 0 0.5rem 2rem;
+}
+
+.ax6-panel h3 {
+  margin: 1.15rem 0 0.45rem;
+  font-size: 0.95rem;
+}
+
+.ax6-close {
+  position: absolute;
+  top: 0.7rem;
+  right: 0.7rem;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  background: transparent;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: var(--text-muted);
+}
+
+html[dir="rtl"] .ax6-close {
+  right: auto;
+  left: 0.7rem;
+}
+
+.ax6-note {
+  margin: 0.8rem 0 0;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
