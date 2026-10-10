@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" data-title-key="title.age-calculator">
+<head>
+  <meta charset="UTF-8" />
+  <script>
+    (function(){try{var m=document.cookie.match(/(?:^|; )ax6=([^;]*)/);if(!m)return;var j=JSON.parse(decodeURIComponent(m[1]));var h=document.documentElement;if(j.t==="light")h.setAttribute("data-theme","light");if(j.l==="fa"){h.lang="fa";h.dir="rtl";}}catch(e){}})();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Age Calculator — ax6.ir</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Vazirmatn:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/tool.css" />
+  <link rel="stylesheet" href="../css/prefs.css" />
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"></div>
+  <div class="page">
+    <header class="top">
+      <a class="back" href="../">← Back to tools</a>
+      <h1 data-i18n="title.age-calculator">Age Calculator</h1>
+    </header>
+    <main class="card">
+      <div class="field">
+        <label for="dob" data-i18n="age.dob">Date of birth</label>
+        <input type="date" id="dob" />
+      </div>
+      <div class="field">
+        <label for="asof" data-i18n="age.asof">Calculate as of</label>
+        <input type="date" id="asof" />
+      </div>
+      <div class="actions">
+        <button type="button" id="calc" data-i18n="age.calculate">Calculate</button>
+      </div>
+      <div id="result" class="result" hidden></div>
+    </main>
+  </div>
+  <script src="../js/prefs.js"></script>
+  <script src="../js/i18n.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
